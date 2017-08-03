@@ -1,0 +1,19 @@
+{
+  "name": "image-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-dev --respawn --no-notify ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cqjsqh/image-editor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cqjsqh/image-editor/issues"
+  },
+  "homepage": "https://github.com/cqjsqh/image-editor#readme"
+}
