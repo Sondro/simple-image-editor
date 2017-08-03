@@ -1,5 +1,5 @@
 function Editor () {
-    this.name = 123;
+    this.name = 1;
 }
 
 
