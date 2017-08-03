@@ -1,9 +1,3 @@
-/**
- * Hello World
- * @function hello
- **/
-const hello = function(key){
-    console.log('Hello World!');
-};
+var Editor = require('./dist/main.bundle.js');
 
-exports.hello = hello;
+module.exports = Editor;
