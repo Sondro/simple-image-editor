@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="file" accept="image/*" accept="image/jpeg,image/jpg,image/png" onchange="fileChange(event)">
+
+<script src="../dist/main.bundle.js"></script>
+<script>
+    function fileChange(e) {
+        var file = e.target.files[0];
+
+        sie(file).width(100).rotate(45).saveFile('abc.jpg').then(function(file2){
+            console.info(file2);
+        }, function(err){
+            console.error(err);
+        });
+    }
+</script>
+</body>
+</html>

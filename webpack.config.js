@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var pkg = require('./package.json');
 
 module.exports = {
     entry: './src/main.js',
@@ -24,6 +25,10 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.DefinePlugin({
+            'PKG': JSON.stringify(pkg)
+        }),
+
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
