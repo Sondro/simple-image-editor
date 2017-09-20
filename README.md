@@ -1,6 +1,6 @@
 # image-editor
 
-###使用方式:
+### 使用方式:
 支持img、url、base64和file类型
 
 ```
